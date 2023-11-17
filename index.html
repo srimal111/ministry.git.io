@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahaweli Authority Landing Page</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #8e44ad, #2980b9);
+            color: #fff;
+        }
+
+        header {
+           
+            text-align: center;
+        }
+
+        section {
+          
+            text-align: center;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            margin: auto;
+            text-align: left;
+        }
+
+        button {
+           border-radius: 15px;
+           background-color: #8e44ad;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background 0.5s ease;
+            width:100%;
+        }
+        h3,p,h2{
+        color: black;
+      
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h1>MINISTRY OFFICE</h1>
+        <!-- User Card -->
+
+
+        <div class="card">
+            <h2>MINISTRY OFFICE</h2>
+            <h2>11 Floor</h2>
+            <p style="color: gray;">office line contact center</p>
+            <p>Fax: <span id="a">011-699028 </span></p>
+            <p style="font-weight: bold;">In Com: <span id="a"> 260 </span></p>
+            <p>Call Landline: <span id="b">011-2699028  </span></p>
+            <p>Call Mobile: <span id="c">None</span></p>
+            <p>Email: <span id="email">min.irrigation@gmail.com</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('a')">Call Landline</button>
+            <button onclick="callNumber('b', true)">Call Mobile</button>
+            <button onclick="openEmailApp()">Send Email</button>
+        </div>
+        <hr>
+
+
+        <div class="card">
+            <h2>Hon. Roshan Ranasinghe</h2>
+            <p style="color: gray;">Designation: Minister of Irrigation </p>
+            <p>Fax: <span id="a">011-2688425</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a">300</span></p>
+            <p>Call Landline: <span id="b">077-2666666</span></p>
+            <p>Call Mobile: <span id="c">011-699028</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('a')">Call Landline</button>
+            <button onclick="callNumber('b', true)">Call Mobile</button>
+        </div>
+        <hr>
+
+        <div class="card">
+            <h2>Mr. Ravindra Samarawickrama</h2>
+            <p style="color: gray;">Designation: Private Secretary </p>
+            <p>Fax: <span id="a">011-699028</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a">213</span></p>
+            <p>Call Landline: <span id="b">011-2687389 </span></p>
+            <p>Call Mobile: <span id="c">071-5609454</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('a')">Call Landline</button>
+            <button onclick="callNumber('b', true)">Call Mobile</button>
+        </div>
+        <hr>
+
+        <div class="card">
+            <h2>Eng. Ivan De Silva</h2>
+            <p style="color: gray;">Designation: Consultant </p>
+            <p>Fax: <span id="a">011-699028</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a">201</span></p>
+            <p>Call Landline: <span id="b">011-2687234 </span></p>
+            <p>Call Mobile: <span id="c">077-5666711</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('a')">Call Landline</button>
+            <button onclick="callNumber('b', true)">Call Mobile</button>
+        </div>
+        <hr>
+
+        <div class="card">
+            <h2>Mr. A.S.Chinthaka</h2>
+            <p style="color: gray;">Designation: Co-ordinating Secretary </p>
+            <p>Fax: <span id="a">011-699028</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a">216</span></p>
+            <p>Call Landline: <span id="b">011-2687389  </span></p>
+            <p>Call Mobile: <span id="c">077-3844746</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('a')">Call Landline</button>
+            <button onclick="callNumber('b', true)">Call Mobile</button>
+        </div>
+        <hr>
+
+        <div class="card">
+            <h2>Major Dimuth Mahaliyana (Reted) </h2>
+            <p style="color: gray;">Designation: Co-ordinating Secretary </p>
+            <p>Fax: <span id="a">027-2227053</span></p>
+            <p style="font-weight: bold;">In Com: <span id="a"> None </span></p>
+            <p>Call Landline: <span id="b">027-2227052  </span></p>
+            <p>Call Mobile: <span id="c">077-2243700</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('a')">Call Landline</button>
+            <button onclick="callNumber('b', true)">Call Mobile</button>
+        </div>
+        <hr>
+
+        <div class="card">
+            <h2>Mr. D. Suranga Amarathunaga </h2>
+            <p style="color: gray;">Designation: Media Secretary </p>
+            <p>Fax: <span id="a">011-699028 </span></p>
+            <p style="font-weight: bold;">In Com: <span id="a"> None </span></p>
+            <p>Call Landline: <span id="b">011-2699034  </span></p>
+            <p>Call Mobile: <span id="c">071-9964883</span></p>
+
+            <!-- Buttons -->
+            <button onclick="callNumber('a')">Call Landline</button>
+            <button onclick="callNumber('b', true)">Call Mobile</button>
+        </div>
+        <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- More content goes here -->
+        <footer>
+            <p style="color: white;">Developmet & Publish by Department of IT - Sri lanka Mahaweli Aithority </p>
+        </footer>
+    </section>
+
+   
+
+    <script>
+        function openEmailApp() {
+            var email = document.getElementById('email').textContent;
+            window.location.href = 'mailto:' + email;
+        }
+
+        function callNumber(number, isMobile = false) {
+            var prefix = isMobile ? 'tel:' : 'tel:';
+            window.location.href = prefix + document.getElementById(number).textContent;
+        }
+    </script>
+
+</body>
+</html>
