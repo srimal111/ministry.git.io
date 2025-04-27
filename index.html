@@ -163,17 +163,47 @@
         <div class="contact-card">
             <div class="contact-details">
                 <div class="contact-image-container">
-                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                    <img class="contact-image" src="1.jpg" alt="Profile Image">
                 </div>
                 <div>
-                    <div class="name">Hon.Roshan Ranasinghe<br>
-                        <span class="disgnation">Minister of Irrigation</span><br>
+                    <div class="name">Hon.Lal kantha<br>
+                        <span class="disgnation">Honorable Minister</span><br>
                         <p>
                          In.Com: <span id="">300</span><br> 
                          LandLine : <span id="mi_land">011-2688425</span><br>
                          Mobile : <span id="mi_mobile">077-2666666</span>                    
                         </p>
                     </div>
+                   
+                </div>
+            </div>
+            <div class="contact-buttons">
+                <button class="call-button" onclick="callNumber('mi_land')"> Call LandLine</button>
+                <button class="call-button" onclick="callNumber('mi_mobile')">Call Mobile</button>
+            </div>
+            <script>
+                function callNumber(number, isMobile = false) {
+                    var prefix = isMobile ? 'tel:' : 'tel:';
+                    window.location.href = prefix + document.getElementById(number).textContent;
+                }
+            </script>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-details">
+                <div class="contact-image-container">
+                    <img class="contact-image" src="one.jpg" alt="Profile Image">
+                </div>
+                <div>
+                    <div class="name">Dr.Susil Ranasinghe<br>
+                        <span class="disgnation">Deputy Minister - Land & irrigation</span><br>
+                        <p>
+                         In.Com: <span id="">300</span><br> 
+                         LandLine : <span id="mi_land">011-2688425</span><br>
+                         Mobile : <span id="mi_mobile">077-2666666</span>                    
+                        </p>
+                    </div>
+                   
                 </div>
             </div>
             <div class="contact-buttons">
